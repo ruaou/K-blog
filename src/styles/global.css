@@ -20,17 +20,6 @@ html {
   --at-apply: 'ease-in-out duration-300ms';
   --at-apply: 'hover:(c-background bg-primary decoration-primary)';
 }
-
-/* 修正 K 的竖排方向 */
-.site-title::first-letter {
-  text-orientation: upright;
-  transform: rotate(-90deg) translateX(-0.15em); /* 反向旋转 + 水平微调 */
-  display: inline-block;
-  font-family: "Arial", sans-serif;
-  font-weight: 900; /* 保持粗体 */
-}
-
-/* 父级强制竖排模式（若未全局设置） */
-.site-title {
-  writing-mode: vertical-rl; /* 关键：竖排上下文 */
+.site-title .k-letter {
+  transform: rotate(0deg); /* 重置任何旋转效果 */
 }
