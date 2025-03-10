@@ -50,8 +50,8 @@ export const defaultConfig: ThemeConfig = {
     categoryMap: [{ name: '胡适', path: 'hu-shi' }],
     footer: [
       '© %year <a target="_blank" href="%website">%author</a>',
-      'Theme <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a> by <a target="_blank" href="https://moeyua.com">Moeyua</a>',
-      'Proudly published with <a target="_blank" href="https://astro.build/">Astro</a>',
+      'Theme <a target="_blank" href="https://blog.ongz.cn/">Typography</a> by <a target="_blank" href="https://blog.ongz.cn/">Moeyua</a>',
+      'Proudly published with <a target="_blank" href="https://blog.ongz.cn/">Astro</a>',
     ],
   },
   appearance: {
