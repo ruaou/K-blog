@@ -6,7 +6,7 @@ import type { ThemeConfig } from '~/types'
 export const defaultConfig: ThemeConfig = {
   site: {
     title: '无涯集',
-    subtitle: 'The Boundless Archive',
+    subtitle: 'Wuya Episteme',
     author: 'Kira',
     description: 'Rediscory the beauty of typography',
     website: 'https://astro-theme-typography.vercel.app/',
