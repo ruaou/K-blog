@@ -21,10 +21,16 @@ html {
   --at-apply: 'hover:(c-background bg-primary decoration-primary)';
 }
 
-/* 仅修复 "K" 的竖排问题 */
-h1::first-letter {
+/* 修正 K 的竖排方向 */
+.site-title::first-letter {
   text-orientation: upright;
-  transform: rotate(90deg);
+  transform: rotate(-90deg) translateX(-0.15em); /* 反向旋转 + 水平微调 */
   display: inline-block;
-  font-family: "Arial", sans-serif; /* 可选：更换字体 */
+  font-family: "Arial", sans-serif;
+  font-weight: 900; /* 保持粗体 */
+}
+
+/* 父级强制竖排模式（若未全局设置） */
+.site-title {
+  writing-mode: vertical-rl; /* 关键：竖排上下文 */
 }
