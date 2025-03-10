@@ -5,8 +5,8 @@ import type { ThemeConfig } from '~/types'
 
 export const defaultConfig: ThemeConfig = {
   site: {
-    title: 'K宇宙',
-    subtitle: 'K’Universe',
+    title: '无涯集',
+    subtitle: 'The Boundless Archive',
     author: 'Kira',
     description: 'Rediscory the beauty of typography',
     website: 'https://astro-theme-typography.vercel.app/',
