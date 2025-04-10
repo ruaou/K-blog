@@ -20,3 +20,25 @@ html {
   --at-apply: 'ease-in-out duration-300ms';
   --at-apply: 'hover:(c-background bg-primary decoration-primary)';
 }
+/* 放在全局 CSS 文件（如 styles.css） */
+@font-face {
+  font-family: 'MyFont';
+  src: url('/fonts/k-regular.woff2') format('woff2');
+  font-weight: 400; /* 常规字重 */
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('/fonts/k-bold.woff2') format('woff2');
+  font-weight: 700; /* 加粗字重 */
+  font-display: swap;
+}
+
+/* 应用字体 */
+body {
+  font-family: 'MyFont', -apple-system, sans-serif;
+  font-weight: 400; /* 默认常规 */
+}
+strong, b, h1, h2, h3 {
+  font-weight: 700; /* 加粗时自动用 k-bold.woff2 */
+}
